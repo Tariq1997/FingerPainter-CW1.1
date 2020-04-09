@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BrushActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Brush Shape"
+    android:textSize="30sp"
+    android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/roundBrushImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/round_brush"
+            />
+        <ImageView
+            android:id="@+id/brushImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/square_brush"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/squareBrushImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/square_brush"
+            />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBsrBrushSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textViewBrush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type Size of Brush"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/brushSize"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="20"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/applyShapeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</ScrollView>
